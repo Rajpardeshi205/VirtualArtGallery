@@ -41,9 +41,12 @@ const Navigation = () => {
       </div>
       <ul className={Styled.sidebar1}>
         <li className={Styled.img_img}>
-          <Link to="/">
+          <Link to="/VirtualArtGallery">
             <img src="./Images/logo.png" alt="Logo" />
           </Link>
+        </li>
+        <li className={Styled.hidonmobile}>
+          <Link to="/VirtualArtGallery">Home</Link>
         </li>
         <li className={Styled.hidonmobile}>
           <Link to="/advice-for-artists">Advice For Artists</Link>

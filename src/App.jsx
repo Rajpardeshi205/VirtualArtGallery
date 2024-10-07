@@ -21,7 +21,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route
-            path="/"
+            path="/VirtualArtGallery"
             element={
               isExplored ? <Explore /> : <Main toggle={toggleExplored} />
             }
