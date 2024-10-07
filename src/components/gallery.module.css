@@ -1,0 +1,10 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.Gallery1 {
+  height: calc(100vh - 82px);
+  margin-top: 20px;
+  background-color: #797d62;
+}

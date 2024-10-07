@@ -1,0 +1,159 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30px;
+  height: 85vh;
+  padding: 0 20px; /* Added padding for smaller screens */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 36px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 108px;
+  line-height: 102px;
+  max-width: 100%; /* Ensures h1 does not exceed container width */
+}
+
+.hero p {
+  font-size: 17px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
+  max-width: 100%; /* Ensures paragraph does not exceed container width */
+}
+
+.hero_image {
+  margin: 0 auto;
+  width: 100%; /* Adjust width for responsiveness */
+  position: relative;
+}
+
+.hero_btn {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  bottom: 90px;
+  right: 0; /* Adjusted to keep buttons centered */
+  z-index: 10;
+}
+
+.hero_btn button {
+  font-size: 24px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  all: unset;
+  padding: 6px 16px;
+  background: black;
+  height: 32px;
+  color: white;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    margin-left: 0; /* Removed margin adjustment */
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 100%; /* Ensure responsiveness */
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero_image {
+    width: 100%; /* Ensure full width */
+  }
+
+  .hero_btn {
+    bottom: 50px;
+    right: 0;
+    justify-content: center;
+    gap: 20px;
+    position: static; /* Keep it in the flow */
+    margin-top: 20px;
+  }
+
+  .hero_btn button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero_btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero_btn button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero_btn {
+    gap: 10px;
+  }
+
+  .hero_btn button {
+    font-size: 16px;
+  }
+}
